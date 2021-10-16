@@ -29,9 +29,9 @@
     </style>
 </head>
 <body>
-    <h1>Count Factorial Of An Entered Number</h1>
+    <h1>Count factorial of an entered Number</h1>
     <form id="form">
-        <input type="num" name="" id="num"><br><br>
+        <input type="number" name="" id="number"><br><br>
         <input type="submit" value="calculate">
     </form>
     <p id="result"></p>
@@ -39,14 +39,14 @@
 <script>
     var frm=document.getElementById("form");
     frm.onsubmit=function(){
-        var num=document.getElementById("num").value;
+        var num=document.getElementById("number").value;
            var result=document.getElementById("result");
            var i,mult=1;
            for(i=1;i<=num;i++){
-               multiply=multiply*i;
+               mult=mult*i;
            }
-           result.innerHTML=multiply;
-           alert("Click Ok to Confirm");
+           result.innerHTML=mult;
+           alert("Are you sure?");
            return false;
     }
  </script>
