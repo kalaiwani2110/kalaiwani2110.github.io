@@ -7,19 +7,30 @@
     <title>Question3</title>
     <style>
         h1{
-            font-size: 30px;
+            font-size: 20px;
             text-transform: uppercase;
             font-family: sans-serif;
             text-align: center;
-            margin:100px auto;
+            margin:70px auto;
+            color:blue;
 
         }
         form{
             text-align:center;
         }
-        input{
+        input[type=submit] {
+        background-color: crimson;
+        border: 0px solid #000000;
+        color: white;
+        padding:12px;
+        border-radius: 50px;
+        font-family: "Arial", "Courier New", monospace;
+        font-size: 18px;
+        }
+        input[type=number] {
             padding:12px;
         }
+
         #result{
             font-size:22px;
             font-family: calibri;
@@ -29,7 +40,7 @@
     </style>
 </head>
 <body>
-    <h1>Count factorial of an entered Number</h1>
+    <h1>Count factorial Value of a Number</h1>
     <form id="form">
         <input type="number" name="" id="number"><br><br>
         <input type="submit" value="calculate">
@@ -41,12 +52,12 @@
     frm.onsubmit=function(){
         var num=document.getElementById("number").value;
            var result=document.getElementById("result");
-           var i,mult=1;
+           var i,multiply=1;
            for(i=1;i<=num;i++){
-               mult=mult*i;
+               multiply=multiply*i;
            }
-           result.innerHTML=mult;
-           alert("Are you sure?");
+           result.innerHTML=multiply;
+           alert("Click ok to confirm!");
            return false;
     }
  </script>
