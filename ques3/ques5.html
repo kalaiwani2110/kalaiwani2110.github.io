@@ -18,22 +18,35 @@
         .container{
             text-align:center;
         }
-        input{
-            padding:12px;
+        input[type=text]{
+        width: 500px;
+        padding: 10px 20px;
+         margin: 8px 0;
+         box-sizing: border-box;
+         background-color: #9AB9CE ;
+        }
+        input[type=button] {
+        background-color: crimson;
+        border: 0px solid #000000;
+        color: white;
+        padding:12px;
+        border-radius: 50px;
+        font-family: "Arial", "Courier New", monospace;
+        font-size: 18px;
         }
         #result{
             font-size:30px;
             font-family: calibri;
-            color:green;
+            color:red;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>CountVowel</h1>
+    <h1>Count The Number of Vowel</h1>
    <div class="container">
-    <input type="text" id="textarea" placeholder="Enter a Word To Check"><br><br>
-    <button type="button" onclick="findVowels()">Calculate</button>
+    <input type="text" id="textarea" placeholder="Enter a Word or a Sentence to Check the number of vowels!"><br><br>
+    <input type="button" onclick="findVowels()" value="Calculate">
        <p id="result"></p>
        </div>
 
@@ -52,8 +65,8 @@
                   vowelsFound.push(txt[i]);
               }
           }
-          document.getElementById("result").innerHTML = "<p><strong>Vowels Found: </strong> "+ vowelsFound +"</p><p><strong>Vowels Count:</strong> "+ vowelsFound.length +"</p>";
-          alert("succesfully calculated" )
+          document.getElementById("result").innerHTML = "<p><strong>The Vowels are: </strong> "+ vowelsFound +"</p><p><strong>Number of Vowels Count:</strong> "+ vowelsFound.length +"</p>";
+          alert("Succesfull !!" )
         }
       </script>
 </body>
