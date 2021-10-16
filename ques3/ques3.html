@@ -23,15 +23,15 @@
         #result{
             font-size:22px;
             font-family: calibri;
-            color:red;
+            color:black;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>calculate factorial of a number</h1>
+    <h1>Count Factorial Of An Entered Number</h1>
     <form id="form">
-        <input type="number" name="" id="number"><br><br>
+        <input type="num" name="" id="num"><br><br>
         <input type="submit" value="calculate">
     </form>
     <p id="result"></p>
@@ -39,14 +39,14 @@
 <script>
     var frm=document.getElementById("form");
     frm.onsubmit=function(){
-        var num=document.getElementById("number").value;
+        var num=document.getElementById("num").value;
            var result=document.getElementById("result");
            var i,mult=1;
            for(i=1;i<=num;i++){
-               mult=mult*i;
+               multiply=multiply*i;
            }
-           result.innerHTML=mult;
-           alert("Are you sure?");
+           result.innerHTML=multiply;
+           alert("Click Ok to Confirm");
            return false;
     }
  </script>
