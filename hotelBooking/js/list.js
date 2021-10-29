@@ -24,7 +24,7 @@ function GetBooking() {
                 let gName = json.bookings[i].name;
                 let gEmail = json.bookings[i].email;
                 let gRoom = json.bookings[i].roomtype;
-                let gArrival = json.bookings[i].arrrivaldate;
+                let gArrival = json.bookings[i].arrivaldate;
                 let gDeparture = json.bookings[i].departuredate;
                 let gRequest = json.bookings[i].specialRequest;
                 let gId = json.bookings[i].id;
