@@ -6,23 +6,31 @@ bookNowBtn.addEventListener("click", function () {
     let userEmail = document.getElementById("userEmail")
     let userEmailVal = userEmail.value
 
-    let userPax = document.getElementById("userPax")
-    let userPaxVal = userPax.value
+    let roomType = document.getElementById("roomType")
+    let roomTypeVal = roomType.value
 
-    let userRemarks = document.getElementById("userRemarks")
-    let userRemarksVal = userRemarks.value
+    let aDate = document.getElementById("aDate")
+    let aDateVal = aDate.value
 
-    BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal)
+    let dDate = document.getElementById("dDate")
+    let dDateVal = dDate.value
+
+    let sRequest = document.getElementById("sRequest")
+    let sRequestVal = sRequest.value
+
+    BookNow(userNameVal, userEmailVal, roomTypeVal, aDateVal, dDateVal, sRequestVal)
 })
 
-function BookNow(userName, userEmail, userPax, userRemarks) {
+function BookNow(userNameVal, userEmailVal, roomTypeVal, aDateVal, dDateVal, sRequestVal) {
     let url = 'https://api.sheety.co/b0388b3fdb8e9911c2bc43abcb013008/bookingApp/bookings';
     let body = {
         booking: {
             name: userName,
             email: userEmail,
-            pax: userPax,
-            remarks: userRemarks
+            roomtype: roomType,
+            arrivaldate: aDate,
+            departuredate: dDate,
+            specialRequest: sRequest
         }
     }
     fetch(url, {
