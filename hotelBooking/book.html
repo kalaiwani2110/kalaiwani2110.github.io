@@ -12,7 +12,6 @@
     </head>
 
 <body>
-    <div class="container-fluid">
        
         <div class="header"  style="font-family:Times New Roman;">
 
@@ -33,22 +32,22 @@
         <div class="container_b">
             <br>
             <p class="lead">Book Now Pay Later!</p>
-            <form name="form" action="processRegister.php" method="post">
+            <form name="form">
             
             
               <div class="input-container">
                 <i class="fa fa-user icon"> Name</i>
-                <input class="input-field" id="firstname" type="text1" placeholder="Enter Your Name..." name="userName" required>
+                <input class="input-field" id="userName" type="text1" placeholder="Enter Your Name..." name="userName" required>
               </div>
             
               <div class="input-container">
                 <i class="fa fa-envelope icon"> Email</i>
-                <input class="input-field" id="lastname" type="text1" placeholder="Enter Your Email..." name="userEmail" required>
+                <input class="input-field" id="userEmail" type="text1" placeholder="Enter Your Email..." name="userEmail" required>
               </div>
             
               <div class="input-container">
                 <i class="fa fa-bed icon"> Room Type</i>
-                <select id="roomtype" type="text1" placeholder="Select the room..." name="roomType" required>
+                <select id="roomType" type="text1" placeholder="Select the room..." name="roomType" required>
                     <option value="Standard Room">Standard Room (1 to 2 People)</option>
                     <option value="Family Room">Family Room (1 to 4 People)</option>
                     <option value="Private Room">Private Room (1 to 3 People)</option>
@@ -59,18 +58,18 @@
             
               <div class="input-container">
                 <i class="fa fa-calendar icon"> Arrival Date</i>
-                <input class="input-field" id="adate" type="date" placeholder="Arrival Date" name="aDate">
+                <input class="input-field" id="aDate" type="date" placeholder="Arrival Date" name="aDate">
               </div>
         
             
               <div class="input-container">
                 <i class="fa fa-calendar icon"> Departure Date</i>
-                <input class="input-field" id="ddate" type="date" placeholder="Departure Date" name="dDate">
+                <input class="input-field" id="dDate" type="date" placeholder="Departure Date" name="dDate">
               </div>
             
               <div class="input-container">
                 <i class="fa fa-home icon"> Special Request</i>
-                <textarea name="sRequest" rows="3" cols="23" placeholder="Mention if u have any Request.." required=""></textarea>
+                <textarea id="sRequest" name="sRequest" rows="3" cols="23" placeholder="Mention if u have any Request.." required=""></textarea>
               </div>
             
               <button type="submit" name="submit" class="btn" id="bookNow">Book Now</button>
@@ -81,9 +80,6 @@
             
             
             </div>
-
-
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
