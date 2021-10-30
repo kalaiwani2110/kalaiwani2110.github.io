@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Light Hotel Booking</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="book.css" rel="stylesheet" type="text/css">
+        <link href="list.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -30,25 +30,24 @@
 
 
                     <h1 class="display-2">Here is our booking list!</h1>
-                    <p class="lead">Call them to confirm!</p>
+                    <p class="lead">Email them to confirm!</p>
     
 
         <!-- Booking List -->
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn btn-primary" id="refreshNow">Refresh Now</button>
-                <table class="table table-striped" id="bookingNameList">
-                    <thead>
+
+                
+                <button type="button" class="button" id="refreshNow"><b>Refresh Now</b></button>
+                <table id="bookingNameList">
                         <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Room Type</th>
-                            <th scope="col">Arrival Date</th>
-                            <th scope="col">Departure Date</th>
-                            <th scope="col">Special Request</th>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Room Type</th>
+                            <th>Arrival Date</th>
+                            <th>Departure Date</th>
+                            <th>Special Request</th>
+                            <th>Action</th>
                         </tr>
-                    </thead>
                     <tbody>
                     </tbody>
                 </table>
